@@ -1,41 +1,138 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ZyloraHub</title>
+  <title>ZyloraHub Storefront</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      background: #0f172a;
-      color: white;
       margin: 0;
       padding: 0;
+      background: #0f172a;
+      color: #fff;
     }
     header {
+      background: #1e293b;
+      text-align: center;
       padding: 60px 20px;
     }
-    h1 {
-      font-size: 40px;
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #22c55e;
     }
-    p {
-      font-size: 18px;
+    header p {
+      font-size: 20px;
       color: #cbd5e1;
+      margin-bottom: 20px;
     }
     .btn {
-      margin-top: 20px;
-      padding: 12px 25px;
+      padding: 12px 30px;
       background: #22c55e;
       color: black;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #22c55e;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product-card {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .product-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #cbd5e1;
+    }
+    footer {
+      background: #1e293b;
+      text-align: center;
+      padding: 40px 20px;
+      color: #94a3b8;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+    @media (max-width: 600px) {
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
-<body><header>
-  <h1>Welcome to ZyloraHub 🚀</h1>
-  <p>Your future hub for smart money, tech & growth</p>
-  <a href="#" class="btn">Get Started</a>
-</header></body>
+<body>
+
+<header>
+  <h1>ZyloraHub</h1>
+  <p>Your gateway to premium digital products 🚀</p>
+  <a href="#products" class="btn">Shop Now</a>
+</header>
+
+<section id="products">
+  <h2>Featured Products</h2>
+  <div class="products">
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Product+1" alt="Product 1">
+      <h3>Digital Product 1</h3>
+      <p>High-quality eBook or resource.</p>
+      <a href="YOUR_SELAR_LINK_1" class="btn">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Product+2" alt="Product 2">
+      <h3>Digital Product 2</h3>
+      <p>Exclusive course or guide.</p>
+      <a href="YOUR_SELAR_LINK_2" class="btn">Buy Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="https://via.placeholder.com/250x150.png?text=Product+3" alt="Product 3">
+      <h3>Digital Product 3</h3>
+      <p>Special toolkit or template.</p>
+      <a href="YOUR_SELAR_LINK_3" class="btn">Buy Now</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 ZyloraHub. All rights reserved.<br>
+  Connect with us: <a href="#">Twitter</a> | <a href="#">Instagram</a>
+</footer>
+
+</body>
 </html>
